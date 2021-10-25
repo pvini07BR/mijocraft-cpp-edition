@@ -1,3 +1,11 @@
+# Controls
+- WASD to move
+- Space to Jump
+- Left Mouse Button to destroy block
+- Right mouse button to place block
+- scroll mouse to change block type to place
+- press tab to alternate between block mode and wall mode
+
 # how 2 compile 4 windows
 First you need a GCC compiler (I use the [TDM-GCC compiler](https://jmeubank.github.io/tdm-gcc/download/)).
 
