@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\teste.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\build",
+            "environment": [],
+            "console": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\mingw32\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enably pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Compile"
+        }
+    ]
+}
