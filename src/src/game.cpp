@@ -212,13 +212,16 @@ void Game::ImGuiRender()
 {
     if (ImGui::CollapsingHeader("Player Inspector"))
     {
-        static char* playerNick = const_cast<char *>(player->nickname.c_str());
-        if (ImGui::InputText("Nickname", playerNick, IM_ARRAYSIZE(playerNick)))
+        //static char buf1[player->nick] = const_cast<char *>(player->nickname.c_str());
+        
+        /*
+        if (ImGui::InputText("Nickname", buf1, 64))
         {
             std::stringstream test;
             test << playerNick;
             player->nickname = test.str();
         }
+        */
 
         static float playerColor[4] = { player->color.x, player->color.y, player->color.z, player->color.w};
         if (ImGui::ColorEdit4("Color", playerColor))
