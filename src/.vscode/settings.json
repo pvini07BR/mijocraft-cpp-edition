@@ -51,7 +51,8 @@
         "forward_list": "cpp",
         "numeric": "cpp",
         "ratio": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp"
     },
     "cmake.configureOnOpen": true
 }

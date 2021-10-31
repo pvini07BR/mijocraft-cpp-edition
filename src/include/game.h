@@ -6,6 +6,8 @@
 #include <fstream>
 #include <sstream>
 #include <filesystem>
+#include <cstdlib>
+#include <ctime>
 #include <string>
 #include <vector>
 #include <block.h>
@@ -57,6 +59,8 @@ public:
     void Update(float dt);
     void UpdateProjection(int width, int height);
     void Render();
+    void SaveWorld(std::string filename);
+    void LoadWorld(const char* fileDirectory);
     void ImGuiRender();
 };
 

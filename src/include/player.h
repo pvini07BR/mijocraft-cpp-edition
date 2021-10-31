@@ -10,13 +10,14 @@
 
 class ActivePlayer{
     public:
-    ActivePlayer(glm::vec4 color, b2World *physWorld);
+    ActivePlayer(std::string nickname, glm::vec4 color, b2World *physWorld);
     ~ActivePlayer();
     void Render(SpriteRenderer *renderer);
     void PhysicsUpdate(float dt);
     void InputUpdate(float dt, bool *keyArray);
     glm::vec2 position;
     glm::vec4 color;
+    std::string nickname;
     float spriteRotation;
     float scale;
     b2Body* body;

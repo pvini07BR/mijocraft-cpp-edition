@@ -12,7 +12,7 @@ TextRenderer::TextRenderer(unsigned int width, unsigned int height)
 {
     // load and configure shader
     this->TextShader = ResourceManager::LoadShader("assets/shaders/vertexText.glsl", "assets/shaders/fragmentText.glsl", nullptr, "text");
-    this->TextShader.SetMatrix4("projection", glm::ortho(0.0f, static_cast<float>(width), static_cast<float>(height), 0.0f), true);
+    //this->TextShader.SetMatrix4("projection", glm::ortho(0.0f, static_cast<float>(width), static_cast<float>(height), 0.0f), true);
     this->TextShader.SetInteger("text", 0);
     // configure VAO/VBO for texture quads
     glGenVertexArrays(1, &this->VAO);

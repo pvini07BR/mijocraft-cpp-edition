@@ -2,12 +2,13 @@
 
 float maxVelocity = 4.0f;
 
-ActivePlayer::ActivePlayer(glm::vec4 color, b2World *physWorld)
+ActivePlayer::ActivePlayer(std::string nickname, glm::vec4 color, b2World *physWorld)
 {
     this->color = color;
     this->position = glm::vec2(0.0f, -3.0f);
     this->scale = 0.75f;
     this->spriteRotation = 0.0f;
+    this->nickname = nickname;
 
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;

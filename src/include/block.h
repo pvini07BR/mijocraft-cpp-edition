@@ -7,12 +7,14 @@
 
 class Block{
     public:
-    Block(Texture2D texture, int posX, int posY, unsigned int type, b2World *physWorld);
+    Block(Texture2D texture, int posX, int posY, unsigned int type, bool isWall, b2World *physWorld);
+    void Render(SpriteRenderer *Renderer);
     ~Block();
     Texture2D texture;
     glm::vec2 position;
     float scale;
     unsigned int type;
+    bool isWall;
     b2Body* groundBody;
 };
 
